@@ -61,4 +61,4 @@ whisperx -> For speech to text
     - 5. Use ffmpeg to burn subtitles onto the video and save the output.
 19. For calling the endpoint,
     - 1. Locally: `modal run main.py`
-    - 2. For deployment: `modal deploy main.py`, live url: https://debsouryadatta--podlab-podlab-process-video.modal.run
+    - 2. For deployment: `modal deploy main.py`

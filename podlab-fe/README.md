@@ -27,3 +27,10 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+### Steps:
+
+1. `pnpm create t3-app@latest`
+2. Remove discord auth provider from env.js and auth/config.ts
+3. Added .env variables: PROCESS_VIDEO_ENDPOINT, PROCESS_VIDEO_ENDPOINT_AUTH, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, S3_BUCKET_NAME
+4. 

@@ -428,7 +428,7 @@ def main():
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer 123123"
+        "Authorization": f"Bearer <AUTH_TOKEN>"
     }
 
     response = requests.post(url, json=payload, headers=headers)
