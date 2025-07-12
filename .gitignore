@@ -52,4 +52,5 @@ ai-podcast-clipper-backend/brca1_analysis_plot.png
 node_modules
 .env
 .env.local
+__pycache__
 
