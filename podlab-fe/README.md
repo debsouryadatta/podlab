@@ -33,4 +33,8 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 1. `pnpm create t3-app@latest`
 2. Remove discord auth provider from env.js and auth/config.ts
 3. Added .env variables: PROCESS_VIDEO_ENDPOINT, PROCESS_VIDEO_ENDPOINT_AUTH, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, S3_BUCKET_NAME
-4. 
+4. `pnpm add inngest`, add `pnpm dlx inngest-cli@latest dev` to package.json
+5. Following the inngest docs: https://www.inngest.com/docs/getting-started/nextjs-quick-start
+6. Creating the inngest function to call our modal endpoint, setting the inngest function concurrency to 1 so that only one job run at a time and the others wait in a queue.
+7. Modifying the concurrency to use the userId as the key so that only 1 job runs for a user at a time. That means multiple users can have multiple jobs running at the same time but only one job per user. If one user is trying to invoke more than one job, the other job will wait in the queue.
+8. 
